@@ -1,4 +1,5 @@
-﻿(function () {
+﻿/*My Demo Javascript*/
+(function () {
     'use strict';
 
     angular
