@@ -1,0 +1,11 @@
+ul
+{
+	margin:5px;
+	position:relative;
+	list-style:none;
+	display:inline;
+}
+li
+{
+	display:inline;
+}

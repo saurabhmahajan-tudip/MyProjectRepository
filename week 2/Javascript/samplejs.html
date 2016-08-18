@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="id01"></div>
+<script>
+function myFunction(abc) {
+    var out = "";
+    var i;
+    for(i = 0; i<abc.length; i++) {
+        out += '<a href="' + abc[i].url + '">' +
+        abc[i].display + '</a><br>';
+    }
+    document.getElementById("id01").innerHTML = out;
+}
+
+</script>
+<script src="sample.js"></script>
+</body>
+</html>

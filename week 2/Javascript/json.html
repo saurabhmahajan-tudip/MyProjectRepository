@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON Array Creation in JavaScript</h2>
+
+<p id="demo"></p>
+<hr>
+<h2>JSON Object Creation in JavaScript</h2>
+<p id="object"></p>
+<script>
+var emp=[
+         {
+         	"firstName":"Dipak",
+         	"lname":"Deshmukh"
+         },
+         {
+         	"firstName":"Rohit",
+         	"lname":"Gund"
+         }
+         {
+         	"fname":"ashok",
+         	"lname":"pagare"
+         }
+        ];
+document.getElementById("demo").innerHTML = 
+"Employee list<br> 1."+emp[0].firstName + "    " +
+emp[0].lname+"<br>2.  "+ emp[1].firstName+"   "+emp[1].lname+"<br> 3."+emp[2].firstName +" "+emp[2].lname;
+
+
+var object='{"name":"sagar patil","street":"Oslo West 16","phone":"555 1234567"}';
+var parser=JSON.parse(object);
+document.getElementById("object").innerHTML=" Object:<br>"+ parser.name +" From "+parser.street +" with Contact Info as "+parser.phone;
+</script>
+
+</body>
+</html>

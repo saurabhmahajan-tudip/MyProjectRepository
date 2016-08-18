@@ -1,0 +1,41 @@
+.login
+{
+	background-color:cyan;
+	float:right;
+	border:5px dotted;
+	margin:5px;
+	padding:10px;
+	height:130px;
+	max-width:300px;
+}
+div
+{
+	float:center;
+}
+.header 
+{
+  height: 60px;
+  margin-bottom:5px;
+  background-color: yellow;
+}
+.ulstyles {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  float:center;
+}
+ul 
+{
+  float:center;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+ul li {
+	float:center;
+  display: inline;
+  margin: 5px;
+}
+h2 {
+  float: right;
+}

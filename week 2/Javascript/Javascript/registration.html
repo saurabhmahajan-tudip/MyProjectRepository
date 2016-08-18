@@ -1,0 +1,29 @@
+<html>
+<head><script src="regscript.js"><title>Registration Form</title></script>
+</head>
+<body bgcolor="#198">
+<h1 align="center" id="heading">Registration Form 
+<hr><br><table align=center><tr>
+<td>Enter Name:-</td><td><input type=text id="name"></td></tr>
+<tr>
+<td>Enter Email:-</td><td><input type=email id="email"></td></tr>
+<tr>
+<td>Enter Password:-</td><td><input type=password id="password"></td></tr><tr>
+<td>Re-Enter Password:-</td><td><input type=password id="reenterpwd"></td></tr>
+<tr><td>Select Location</td>
+<td>
+<select name="Location" id="location">
+	<option value="Select Value">Select Value</option>
+	<option value="Pune">Pune</option>
+	<option value="Nagpur">Nagpur</option>
+	<option value="Bangalore">Bangalore</option>
+	<option value="Chennai">Chennai</option>
+	<option value="Other">Other</option></td></tr>
+</select>
+</table>
+<br>
+<a href="registered.html"><input type="submit" Value="Register" onfocus="valid()" onclick= "cookies()" id="register"></input></a>
+<input type="submit" value="check validation" onclick="console.log(IsEmpty('name'))">
+<input type="Button" value="Cancel"></input>
+</body>
+</html>

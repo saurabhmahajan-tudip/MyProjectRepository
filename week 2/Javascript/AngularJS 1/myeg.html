@@ -1,0 +1,67 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="" bgcolor="red">
+<form name="sampleForm">
+<h1>Registration Form</h1>
+<table>
+<tr>
+<td> First Name:= </td>
+<td><input name="fName" ng-model="fName" placeholder="input first name here" required>
+<span ng-show="sampleForm.fName.$touched && sampleForm.fName.$invalid">The name is required.</span>
+</td>
+</tr>
+<tr>
+<td>Last Name := </td><td><input name="lName" type="text" ng-model="lName" placeholder="input last name here" required>
+<span ng-show="sampleForm.lName.$touched && sampleForm.lName.$invalid">Field is required.</span>
+</td>
+</tr>
+<tr>
+<td>EMail:=</td><td><input name="mail" type="email" ng-model="mail" placeholder="input value here" required>
+<span ng-show="sampleForm.mail.$touched && sampleForm.mail.$invalid">Field is required.</span>
+</td>
+</tr>
+<tr>
+<td>
+Area:
+</td>
+<td>
+<select ng-init="Areas=[{part:'Jalgaon'},{ part:'Nagpur'},{part:'Washim'}]">
+<option ng-repeat="area in Areas">
+	{{area.part}}
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Select State:</td>
+<td>
+<select ng-init="State=[{name:'Maharashtra'},{name:'Madhya Pradesh'},{name:'Karnataka'}]">
+<option ng-repeat="state in State">
+{{ state.name}}
+</option>
+</select>
+</td>
+</tr>
+<tr>
+<td> Password:== </td><td><input name="password" type="password" ng-model="password" placeholder="input value here" required>
+<span ng-show="sampleForm.password.$touched && sampleForm.password.$invalid">Field is required.</span>
+</td>
+</tr>
+<tr>
+</tr>
+<td>Reenter password:= </td><td><input name="repwd" type="password" ng-model="repwd" placeholder="input value here" required>
+<span ng-show="sampleForm.repwd.$touched && sampleForm.repwd.$invalid">Field is required.</span>
+</td>
+</tr>
+</table>
+</form>	
+<br><br>
+Full info for User<br>
+name:{{fName + "  " +lName}}<br>
+Email:{{mail}}<br>
+Username:{{mail}}<br>
+</body>
+
+</html>	

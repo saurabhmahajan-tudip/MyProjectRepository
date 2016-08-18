@@ -1,0 +1,34 @@
+.header {
+  background-color: bgcolor;
+  min-height: 20px;
+  margin: 0px;
+  font-size: 3em;
+}
+.login {
+  background-color: cyan;
+  float: right;
+  border: 5px dotted;
+  height: 150px;
+  width: 300px;
+  min-width: 10px;
+  position: relative;
+  margin-right: 120px;
+}
+ul {
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+}
+body {
+  background-color: lightgreen;
+}
+ul li {
+  display: inline;
+  margin-left: 50px;
+}
+h2 {
+  float: right;
+}
+
+
+/*# sourceMappingURL=styles.css.map */

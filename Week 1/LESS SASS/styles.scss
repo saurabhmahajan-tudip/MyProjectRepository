@@ -1,0 +1,44 @@
+$ht:20px;
+$htl:150px;
+$w:300px;
+$bgcolor:yellow;
+$bbgcolor:lightgreen;
+$padding:5px;
+$margin:3px;
+$rm:120px;
+$color:#999;
+.header
+{
+	background-color:bgcolor; 
+	min-height:$ht;
+}
+.login
+{
+	background-color:cyan;
+	float:right;
+	border:5px dotted;
+	height:$htl;	
+	width:$w;
+	min-width:10px;
+	position:relative;
+	margin-right:$rm;
+}
+@mixin ulstyles
+{
+	list-style: none;
+	margin: 0;
+	padding: $padding;
+}
+ul
+{
+	@include ulstyles;
+	li 
+	{
+		display: inline;
+		margin: $margin;	
+	}
+}
+h2
+{
+	float:right;
+}

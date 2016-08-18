@@ -1,0 +1,5 @@
+html(), text() and val() function,
+apply CSS to an element,
+document.ready() function,
+add/remove elements using JQuery,
+show/hide and add/remove an element in DOM using jQuery.

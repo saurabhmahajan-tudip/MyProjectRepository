@@ -1,0 +1,15 @@
+.ulstyle {
+  margin: 5px;
+  position: relative;
+  list-style: none;
+  display: inline;
+}
+ul {
+  margin: 5px;
+  position: relative;
+  list-style: none;
+  display: inline;
+}
+ul li {
+  display: inline;
+}

@@ -1,0 +1,50 @@
+@ht:20px;
+@htl:150px;
+@w:300px;
+@bgcolor:yellow;
+@bbgcolor:lightgreen;
+@padding:5px;
+@margin:5px;
+@rm:120px;
+@color:#999;
+.header
+{
+	background-color:bgcolor; 
+	min-height:@ht;
+	margin:0px;
+	font-size:3em;
+}
+.login
+{
+	background-color:cyan;
+	float:right;
+	border:5px dotted;
+	height:@htl;	
+	width:@w;
+	min-width:10px;
+	position:relative;
+	margin-right:@rm;
+}
+.ulstyles
+{
+	list-style: none;
+	margin: @margin;
+	padding: @padding;
+}
+body
+{
+	background-color:@bbgcolor;
+}
+ul
+{
+	&:extend(.ulstyles);
+	li 
+	{
+		display: inline;
+		margin-left:50px;	
+	}
+}
+h2
+{
+	float:right;
+}

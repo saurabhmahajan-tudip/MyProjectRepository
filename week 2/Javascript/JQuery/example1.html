@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="script.js">
+</script>
+</head>
+<body>
+	<div id="div" class="main">
+		<h1>JavaScript</h1>
+		Enter value:<input type="text" id="txt1">
+		<br>
+		Enter Value:<input type="text" id="txt2">
+		<br>
+		Enter Value:<input type="text" id="txt3">
+		<p id="demo">JavaScript can change the style of an HTML element.</p>
+		<button type="button" onclick="document.getElementById('demo').style.display='none';">Hide component</button>
+		<button type="button" onclick="document.getElementById('demo').style.display='inherit';">Display component</button>
+		<button type="button" onclick="addition()">Addition</button>
+		<button type="button" id='s' onclick="calculation.subtract()">Subtract</button>
+		<button type="button" onclick="document.getElementById('demo').innerHTML='Attribute	 Change'">Change title</button>
+		<button type="button"  onmouseover="style.width='300px';" onmouseout="style.width='80px';"  onclick="document.getElementById('demo').style.fontFamily='Comic sans MS';">Change Font</button>
+		<button type="button" onclick="addelement()"> Add Heading</button><br><br>
+		<button type="button" id='s' onclick="console.log(friend.property())">Prototype Testing</button>
+		<button type="button" onclick="(document.getElementsByClassName('main'))[0].style.border='2px solid black';">find element by class name</button>
+	</div>
+</body>
+</html>
