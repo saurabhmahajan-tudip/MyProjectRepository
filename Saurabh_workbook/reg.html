@@ -1,0 +1,41 @@
+<div class="main">
+	<div id="header">
+		<h1>Registration Form</h1>
+	</div>
+	<div id="container">
+	<form name="regForm" ng-submit="register()" ng-controller="regController">
+		<table>
+	<tr>
+<td> First Name:= </td>
+<td>
+	<input name="fName" ng-model="fName" placeholder="First Name" required=""/>
+	<span  style="color:red " ng-show="regForm.fName.$touched && regForm.fName.$invalid"> *</span>
+</td>
+</tr>
+<tr>
+	<td>Last Name := </td><td><input name="lName" type="text" ng-model="lName" placeholder="input last name here" required>
+   <span style="color:red " ng-show="regForm.lName.$touched && regForm.lName.$invalid">*</span>
+	</td>
+</tr>
+<tr>
+	<td>EMail:=</td><td><input name="mail" type="email" ng-model="mail" placeholder="input mail id here" required>
+    <span style="color:red " ng-show="regForm.mail.$touched && regForm.mail.$invalid">*</span>
+	</td>
+</tr>
+<tr>
+<td> Password:== </td><td><input name="password" type="password" ng-model="password" placeholder="Password" required>
+<span style="color:red " ng-show="regForm.password.$touched && regForm.password.$invalid">*</span>
+</td>
+</tr>
+<tr>
+</tr>
+<td>Reenter password:= </td><td><input name="repwd" type="password" ng-model="repwd" placeholder="Reenter Password" required>
+<span style="color:red " ng-show="regForm.repwd.$touched && regForm.repwd.$invalid">*</span>
+</td>
+</tr>
+</table>	
+<input type="submit" Value="Register"></button>
+<button name="Cancel" onclick="location.href='#Login'">Cancel</button>
+</div>
+</div>
+</form>

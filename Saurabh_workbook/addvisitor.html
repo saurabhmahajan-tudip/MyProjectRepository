@@ -1,0 +1,14 @@
+<form id="visitor" ng-controller="visitctrl" ng-submit="addVisitor()">
+<ul type="none">
+<li>Visitor's Name:</li>
+<li><input type="text" min="30" ng-model="visitorname" placeholder="Visitor Full name" size="32"/></li>
+<li>Email:</li>
+<li><input type="email" name="mail" ng-model="mail" placeholder="Visitor's Mail ID" size="32"/><br/></li>	
+<li>Contact No. : </li>
+<li>+91<input type="text" name="mobno" ng-model="mobno" placeholder="10 DIgit Contact Number" maxlength="10" size="28"/><br/></li>
+<li>In time:</li>
+<li><input type="time" name="InTime"  value="14:22" id="intime" size="6" placeholder="HR:MN" /><br/></li>
+<li><input type="submit" value="Add Visitor" size="32"/>
+<input type="button" value="Cancel" size="32" /></li>
+</ul>
+</form>

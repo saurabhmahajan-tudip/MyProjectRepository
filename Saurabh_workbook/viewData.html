@@ -1,0 +1,29 @@
+<div>
+<a href ng-click="viewData()">Visitor's Data</a>
+<table  id="ViewDatatable">
+<tr>
+	<td>Sr No</td>
+	<td>Visitor Name</td>
+	<td>Visitor Email</td>
+	<td>Visitor Contact Info</td>
+	<td>Visitor In Time</td>
+	<td>Visitor OutTime</td>
+</tr>
+<tr ng-repeat="vals in records">
+	<td ng-show="!a">{{vals.srno}}</td>
+	<td ng-show="!a">{{vals.vname}}</td>
+	<td ng-show="!a">{{vals.vmail}}</td>
+	<td ng-show="!a">{{vals.cno}}</td>
+	<td ng-show="!a">{{vals.intime}}</td>
+	<td ng-show="!a"></td>
+	<td ng-show="a"><input type="text" value={{vals.srno}} ng-model="vals.srno" disabled="true"></td>
+	<td ng-show="a"><input type="text" value={{vals.vname}} ng-model="vals.vname" disabled="true"></td>
+	<td ng-show="a"><input type="text" value={{vals.vmail}} ng-model="vals.vmail" disabled="true"></td>
+	<td ng-show="a"><input type="text" value={{vals.cno}} ng-model="vals.cno" disabled="true"></td>		
+	<td ng-show="a"><input type="text" value={{vals.intime}} ng-model="vals.intime" disabled="true"></td>
+	<td ng-show="a"><input type="time" value={{vals.outtime}} id="outtime"></td>
+	<td><button type="button" ng-click="a=!a" ng-show="!a">Edit</button><input type="button" value="Update" ng-show="a" ng-click="updateVisitorData()"/>
+	<input type="button" value="Delete" ng-show="a" ng-click="deleteData()"/>
+</tr>
+</table>
+</div>

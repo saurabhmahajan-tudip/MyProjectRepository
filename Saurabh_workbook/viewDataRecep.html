@@ -1,0 +1,29 @@
+<div id="ViewData">
+<a href ng-click="viewRecepData()">Receptionist's Data</a>
+<table  id="ViewDatatable">
+<tr>
+	<td>Sr.No</td>
+	<td>Receptionist's Name</td>
+	<td>Receptionist's Email</td>
+	<td>Receptionist's Contact Info</td>
+	<td>Username</td>
+	<td>Password</td>
+</tr>
+<tr ng-repeat="vals in visRecords">
+	<td ng-show="!a">{{vals.srno}}</td>
+	<td ng-show="!a">{{vals.recepname}}</td>
+	<td ng-show="!a">{{vals.recepmail}}</td>
+	<td ng-show="!a">{{vals.mobno}}</td>
+	<td ng-show="!a">{{vals.uname}}</td>
+	<td ng-show="!a">{{vals.password}}</td>
+	<td ng-show="a"><input type="text" value={{vals.srno}} ng-model="vals.srno"></td>
+	<td ng-show="a"><input type="text" value={{vals.recepname}}  ng-model="vals.recepname"></td>
+	<td ng-show="a"><input type="text" value={{vals.recepmail}} ng-model="vals.recepmail"></td>
+	<td ng-show="a"><input type="text" value={{vals.mobno}}  ng-model="vals.mobno"></td>		
+	<td ng-show="a"><input type="text" value={{vals.uname}} ng-model="vals.uname"></td>
+	<td ng-show="a"><input type="text" value={{vals.password}} ng-model="vals.password"></td>
+	<td><button type="button" ng-click="a=!a" ng-show="!a">Edit</button><input type="button" value="Update" ng-show="a" ng-click="updateData(vals.srno)"/>
+	<input type="button" value="Delete" ng-show="a" ng-click="deleteData(vals.srno)"/>
+</tr>
+</table>
+</div>
